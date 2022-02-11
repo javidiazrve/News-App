@@ -1,0 +1,17 @@
+<ion-header no-border>
+  <ion-toolbar color="dark">
+    <ion-title text-center>
+      Favoritos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  
+  <div *ngIf="dl.noticias.length === 0">
+    No Hay Favoritos
+  </div>
+
+  <app-noticias [noticias]="dl.noticias" [favoritos]="true"></app-noticias>
+
+</ion-content>
